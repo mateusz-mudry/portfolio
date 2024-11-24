@@ -6,15 +6,19 @@ body {
 nav {
   width: 100vw;
   background-color: #7fffd4;
+  padding: 10px 0;
 }
 
 ul {
   display: flex;
-  gap: 10px;
-  list-style-type: none;
-  justify-content: end;
-  padding: 0 100px 0 0;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 50px;
   margin: 0;
+}
+
+ul button {
+  margin-left: 20px;
 }
 
 nav button {
@@ -26,6 +30,8 @@ nav button {
   border: none;
   background-color: #7fffd4;
   transition: background 0.2s ease, border-bottom 0.2s ease;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 nav button:hover {
@@ -36,32 +42,58 @@ nav button:hover {
     rgba(127, 255, 212, 1) 100%
   );
   cursor: pointer;
-  border-bottom: 5px solid rgb(255, 255, 188);
 }
 
 a {
   text-decoration: none;
 }
 
-h1 {
+.main-text h1 {
+  font-size: 3rem;
   margin: 0;
 }
 
 .main {
-  height: 600px;
-  background-color: rgb(241, 241, 241);
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  height: 400px;
+}
+
+.main p {
+  font-size: 20px;
 }
 
 .main div {
-  border: 1px solid black;
-  width: 600px;
+  width: 400px;
+  flex: 1;
 }
 
-.img {
-  height: 500px;
-  width: 500px;
-  background-color: bisque;
+.main-text {
+  max-width: 300px;
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-text button {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  background-color: #7fffd4;
+  border: none;
+  border-radius: 10px;
+}
+
+.main img {
+  flex: 1;
+  max-width: 250px;
+  height: auto;
   border-radius: 50%;
+  object-fit: cover;
+  margin-left: 30px;
 }
