@@ -110,9 +110,7 @@ nav svg {
     0deg,
     rgba(255, 220, 144, 1) 0%,
     rgba(127, 255, 212, 1) 100%
-  ) ; cursor: pointer; } a { text-decoration: none; } */ 
-   
-  
+  ) ; cursor: pointer; } a { text-decoration: none; } */
 
 /* MAIN PAGE */
 
@@ -126,9 +124,9 @@ nav svg {
 .main-text {
   display: flex;
   flex-direction: column;
- justify-content: center;
- gap: 40px;
- font-size: 1.5rem;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.5rem;
 }
 
 .main-text h1 {
@@ -161,7 +159,7 @@ nav svg {
   /* height: 600px; */
 }
 
-img {
+.main-photo {
   height: 450px;
   width: 450px;
   border-radius: 50%;
@@ -177,7 +175,7 @@ img {
 @media (max-width: 450px) {
   .main-img {
     display: none;
-}
+  }
 }
 
 /* .main-text h1 {
@@ -228,4 +226,88 @@ img {
   border-radius: 50%;
   object-fit: cover;
   margin-left: 30px;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+  height: 600px;
+  width: 100%;
+  /* border: 1px black solid; */
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.projects-header {
+  height: 100px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.project-div {
+  height: 380px;
+  width: 335px;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aquamarine; */
+  /* -webkit-box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1); */
+}
+
+.projects-github-section {
+  height: 100px;
+  padding: 0 150px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* .project-img {
+  border-radius: 10px 10px 0 0;
+} */
+
+.projects-icon {
+  height: 50px;
+  width: 50px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.project-button {
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  background-color: #7fffd4;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  height: 600px;
+  width: 100%;
+  background-color: var(--color-2);
 }
