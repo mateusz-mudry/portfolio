@@ -308,6 +308,58 @@ h3 {
 
 .about {
   height: 600px;
-  width: 100%;
+  /* width: 100%; */
+  padding: 0 150px;
   background-color: var(--color-2);
+}
+
+.about-header {
+  height: 100px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.about-linkedin-section {
+  height: 100px;
+  padding: 0 150px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-icon {
+  height: 100px;
+  padding: 0 150px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
